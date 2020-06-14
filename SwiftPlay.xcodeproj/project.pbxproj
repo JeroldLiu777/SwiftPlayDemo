@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA6ED2972495CC9F0003D3B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6ED2962495CC9F0003D3B3 /* ContentView.swift */; };
+		EA6ED29B2495DAA00003D3B3 /* CirclesImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6ED29A2495DAA00003D3B3 /* CirclesImage.swift */; };
+		EA6ED29D2495DBCB0003D3B3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6ED29C2495DBCB0003D3B3 /* MapView.swift */; };
 		EA9B291F24912AFA00F3116E /* TestOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9B291E24912AFA00F3116E /* TestOneCell.swift */; };
 		EAD3192024834CA00080F82C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3191F24834CA00080F82C /* AppDelegate.swift */; };
 		EAD3192224834CA00080F82C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3192124834CA00080F82C /* SceneDelegate.swift */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA6ED2962495CC9F0003D3B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA6ED29A2495DAA00003D3B3 /* CirclesImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesImage.swift; sourceTree = "<group>"; };
+		EA6ED29C2495DBCB0003D3B3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		EA9B291E24912AFA00F3116E /* TestOneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestOneCell.swift; sourceTree = "<group>"; };
 		EAD3191C24834CA00080F82C /* SwiftPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD3191F24834CA00080F82C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +124,9 @@
 				EAD3194F24834CD70080F82C /* test.swift */,
 				EAD3195124834E9E0080F82C /* TestViewController.swift */,
 				EAD3195224834E9E0080F82C /* TestViewController.xib */,
+				EA6ED2962495CC9F0003D3B3 /* ContentView.swift */,
+				EA6ED29A2495DAA00003D3B3 /* CirclesImage.swift */,
+				EA6ED29C2495DBCB0003D3B3 /* MapView.swift */,
 			);
 			path = SwiftPlay;
 			sourceTree = "<group>";
@@ -274,9 +283,12 @@
 			files = (
 				EA9B291F24912AFA00F3116E /* TestOneCell.swift in Sources */,
 				EAD3195324834E9E0080F82C /* TestViewController.swift in Sources */,
+				EA6ED2972495CC9F0003D3B3 /* ContentView.swift in Sources */,
 				EAD3192424834CA00080F82C /* ViewController.swift in Sources */,
 				EAD3195024834CD70080F82C /* test.swift in Sources */,
+				EA6ED29B2495DAA00003D3B3 /* CirclesImage.swift in Sources */,
 				EAD3192024834CA00080F82C /* AppDelegate.swift in Sources */,
+				EA6ED29D2495DBCB0003D3B3 /* MapView.swift in Sources */,
 				EAD3192224834CA00080F82C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
