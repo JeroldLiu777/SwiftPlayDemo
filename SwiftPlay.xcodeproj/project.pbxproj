@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA9B291F24912AFA00F3116E /* TestOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9B291E24912AFA00F3116E /* TestOneCell.swift */; };
 		EAD3192024834CA00080F82C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3191F24834CA00080F82C /* AppDelegate.swift */; };
 		EAD3192224834CA00080F82C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3192124834CA00080F82C /* SceneDelegate.swift */; };
 		EAD3192424834CA00080F82C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3192324834CA00080F82C /* ViewController.swift */; };
@@ -15,6 +16,9 @@
 		EAD3192C24834CA40080F82C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD3192A24834CA40080F82C /* LaunchScreen.storyboard */; };
 		EAD3193724834CA50080F82C /* SwiftPlayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3193624834CA50080F82C /* SwiftPlayTests.swift */; };
 		EAD3194224834CA50080F82C /* SwiftPlayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3194124834CA50080F82C /* SwiftPlayUITests.swift */; };
+		EAD3195024834CD70080F82C /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3194F24834CD70080F82C /* test.swift */; };
+		EAD3195324834E9E0080F82C /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3195124834E9E0080F82C /* TestViewController.swift */; };
+		EAD3195424834E9E0080F82C /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD3195224834E9E0080F82C /* TestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA9B291E24912AFA00F3116E /* TestOneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestOneCell.swift; sourceTree = "<group>"; };
 		EAD3191C24834CA00080F82C /* SwiftPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD3191F24834CA00080F82C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD3192124834CA00080F82C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		EAD3193D24834CA50080F82C /* SwiftPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD3194124834CA50080F82C /* SwiftPlayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPlayUITests.swift; sourceTree = "<group>"; };
 		EAD3194324834CA50080F82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD3194F24834CD70080F82C /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		EAD3195124834E9E0080F82C /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		EAD3195224834E9E0080F82C /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		EAD3191E24834CA00080F82C /* SwiftPlay */ = {
 			isa = PBXGroup;
 			children = (
+				EA9B291E24912AFA00F3116E /* TestOneCell.swift */,
 				EAD3191F24834CA00080F82C /* AppDelegate.swift */,
 				EAD3192124834CA00080F82C /* SceneDelegate.swift */,
 				EAD3192324834CA00080F82C /* ViewController.swift */,
@@ -106,6 +115,9 @@
 				EAD3192824834CA40080F82C /* Assets.xcassets */,
 				EAD3192A24834CA40080F82C /* LaunchScreen.storyboard */,
 				EAD3192D24834CA40080F82C /* Info.plist */,
+				EAD3194F24834CD70080F82C /* test.swift */,
+				EAD3195124834E9E0080F82C /* TestViewController.swift */,
+				EAD3195224834E9E0080F82C /* TestViewController.xib */,
 			);
 			path = SwiftPlay;
 			sourceTree = "<group>";
@@ -234,6 +246,7 @@
 			files = (
 				EAD3192C24834CA40080F82C /* LaunchScreen.storyboard in Resources */,
 				EAD3192924834CA40080F82C /* Assets.xcassets in Resources */,
+				EAD3195424834E9E0080F82C /* TestViewController.xib in Resources */,
 				EAD3192724834CA00080F82C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA9B291F24912AFA00F3116E /* TestOneCell.swift in Sources */,
+				EAD3195324834E9E0080F82C /* TestViewController.swift in Sources */,
 				EAD3192424834CA00080F82C /* ViewController.swift in Sources */,
+				EAD3195024834CD70080F82C /* test.swift in Sources */,
 				EAD3192024834CA00080F82C /* AppDelegate.swift in Sources */,
 				EAD3192224834CA00080F82C /* SceneDelegate.swift in Sources */,
 			);
