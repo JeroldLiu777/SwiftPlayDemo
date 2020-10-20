@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 ///SwiftUI--一个简单的Map介绍页面
-struct ContentView:View {
+struct LandmarkDetail:View {
     var body: some View {
         VStack{
             MapView()
@@ -39,8 +39,8 @@ struct ContentView:View {
 
 
 
-struct ContentViewPreView:PreviewProvider {
+struct LandmarkDetailPreView:PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandmarkDetail()
     }
 }
