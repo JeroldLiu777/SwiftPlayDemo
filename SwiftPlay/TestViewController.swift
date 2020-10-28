@@ -14,7 +14,7 @@ func STATUSBAR_HEIGHT() -> CGFloat {return windowKey?.windowScene?.statusBarMana
 func RGB_COLOR(r:CGFloat, g:CGFloat, b:CGFloat) -> UIColor {return UIColor(red: r, green: g, blue: b, alpha: 1)}
 
 
-class TestViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TestViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
     let cellIdentifierOne = "TestOneCell.Type.self"
     lazy var tableView:UITableView = {
         var tableViewTemp:UITableView = UITableView(frame: CGRect(x: 0, y: 0, width: screen_width, height: screen_height))
@@ -24,8 +24,23 @@ class TestViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableViewTemp.tableFooterView = UIView.init() //去掉尾部无数据的多余cell
         return tableViewTemp
     }()
-    var array:[String] = ["纯代码自定义cell","nib自定义cell"]
     
+    lazy var collectionViewJer:UICollectionView = {
+        var collectionLayOut:UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
+        collectionLayOut.itemSize = CGSize(width: 100, height: 200)
+        collectionLayOut.minimumLineSpacing = 0
+        collectionLayOut.minimumInteritemSpacing = 0
+        var collect:UICollectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: screen_width, height: 200), collectionViewLayout: collectionLayOut)
+        collect.delegate = self
+        collect.dataSource = self
+        collect.register(TestCollectCell.classForCoder(), forCellWithReuseIdentifier: cellIdentifierOne)
+        return collect
+    }()
+    
+    var array:[String] = ["纯代码自定义cell","纯代码自定义cell2","神奇的呆蛙"]
+    
+    
+    ///tableview delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return array.count
     }
@@ -53,6 +68,18 @@ class TestViewController: UIViewController, UITableViewDataSource, UITableViewDe
         default:
             print("default")
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return array.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        var cell:UICollectionViewCell? = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifierOne, for: indexPath)
+        if cell == nil {
+            cell = TestCollectCell.init()
+        }
+        return cell!
     }
     
     override func viewDidLoad() {

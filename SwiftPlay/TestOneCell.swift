@@ -11,10 +11,6 @@ import UIKit
 
 
 class TestOneCell: UITableViewCell {
-    func commonInit() -> Void {
-        self.contentView.addSubview(self.imageViewOne)
-        self.contentView.addSubview(self.titleLabel)
-    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -42,6 +38,11 @@ class TestOneCell: UITableViewCell {
         return titleLab
     }()
     
+    func commonInit() -> Void {
+        self.contentView.addSubview(self.imageViewOne)
+        self.contentView.addSubview(self.titleLabel)
+    }
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         commonInit()
@@ -53,4 +54,20 @@ class TestOneCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+}
+
+
+class TestCollectCell: UICollectionViewCell {
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    func commonInit() -> Void {
+        
+    }
 }
